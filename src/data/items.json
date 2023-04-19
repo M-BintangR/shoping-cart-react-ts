@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Book",
+        "price": "1.000.000",
+        "imgUrl": "/imgs/book.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Car",
+        "price": "10.000.000",
+        "imgUrl": "/imgs/car.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Figure Anime",
+        "price": "500.000",
+        "imgUrl": "/imgs/figureanime.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Pisang",
+        "price": "5.000",
+        "imgUrl": "/imgs/pisang.jpg"
+    }
+]
