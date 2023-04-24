@@ -1,23 +1,18 @@
-import { Col, Row } from 'react-bootstrap';
-import storeItems from '../data/items.json';
-import React from 'react'
+import { Col, Row } from "react-bootstrap"
+import { StoreItem } from "../components/StoreItem"
+import storeItems from "../data/items.json"
 
-const Store = () => {
+export function Store() {
     return (
-        <React.Fragment>
+        <>
             <h1>Store</h1>
-            {storeItems.map((item, i) => {
-                const data = JSON.stringify(item);
-                return (
-                    <Row>
-                        <Col>
-                            {data}
-                        </Col>
-                    </Row>
-                )
-            })}
-        </React.Fragment>
+            <Row md={2} xs={1} lg={3} className="g-3">
+                {storeItems.map(item => (
+                    <Col key={item.id}>
+                        <StoreItem {...item} />
+                    </Col>
+                ))}
+            </Row>
+        </>
     )
 }
-
-export default Store
